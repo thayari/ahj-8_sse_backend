@@ -1,0 +1,29 @@
+{
+  "name": "server_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "watch": "forever -w server.js",
+    "start": "nodemon server.js",
+    "prestart": "npm install"
+  },
+  "engines": {
+    "node": "11.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^2.0.0",
+    "http": "0.0.0",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-router": "^8.0.8",
+    "koa2-cors": "^2.0.6",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
